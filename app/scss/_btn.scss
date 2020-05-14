@@ -1,0 +1,56 @@
+.btn {
+    position: relative;
+
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px 55px;
+    border: 1px solid $main-color;
+    font-size: 16px;
+    font-weight: 500;
+    color: $main-color;
+    text-decoration: none;
+
+    transition: all .2s ease;
+
+    &:hover {
+        background-color: $main-color;
+        color: $white;
+
+        &::after,
+        &::before {
+            border-color: $white;
+        }
+    }
+
+    &::after,
+    &::before {
+        position: absolute;
+
+        content: "";
+        width: 9px;
+        height: 9px;
+        border: 1px solid $main-color;
+        border-radius: 50%;
+    }
+
+    &::after {
+        left: 10px;
+        top: 10px;
+    }
+
+    &::before {
+        right: 10px;
+        bottom: 10px;
+    }
+
+    &--sm {
+        font-weight: 400;
+        padding: 13px 28px;
+
+        &::after,
+        &::before {
+            width: 7px;
+            height: 7px;
+        } 
+    }
+}

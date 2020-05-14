@@ -1,0 +1,131 @@
+.header {
+    padding: 30px 0;
+
+    &--main {
+        position: relative;
+        background-color: $gray3;
+        padding: 20px 0;
+
+        @media(max-width: 715px) {
+            .header__inner {
+                flex-direction: column;
+            }
+
+            .header__col {
+                margin-bottom: 20px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        @media(max-width: 475px) {
+            font-size: 12px;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media(max-width: 475px) {
+            flex-direction: column;
+        }
+    }
+
+    &__col {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        font-size: 26px;
+        font-weight: 700;
+
+        margin-right: 136px;
+
+        @media(max-width: 1190px) {
+            margin-right: 40px;
+        }
+
+        @media(max-width: 715px) {
+            font-size: 20px;
+            margin-right: 0px;
+        }
+
+        @media(max-width: 475px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__text {
+        position: relative;
+        text-decoration: none;
+        color: $main-color;
+
+        margin-left: 30px;
+
+        &::after {
+            position: absolute;
+            top: 50%;
+            left: -16px;
+            transform: translateY(-50%);
+
+            content: "";
+            width: 5px;
+            height: 5px;
+            background-color: $gray1;
+            border-radius: 50%;
+        }
+
+        &:first-child {
+            margin-left: 0;
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: -26px;
+        transform: translateY(-50%);
+    }
+
+    &__text-bold {
+        font-weight: 700;
+        margin-right: 6px;
+    }
+
+    &__tab {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        margin-left: 30px;
+        text-decoration: none;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &--menu {
+            display: none;
+
+            @media(max-width: 1075px) {
+                display: flex;
+            }
+        }
+    }
+
+    &__tab-name{
+        font-size: 14px;
+        color: $gray1;
+        margin-top: 4px;
+    }
+}
+

@@ -1,0 +1,45 @@
+.filter {
+    &__item {
+        position: relative;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 14px 28px;
+        color: $secondary-color;
+        box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.01);
+        background-color: $white;
+        border-radius: .25em;
+        transition: all .2s ease;
+
+        margin: 6px 4px;
+
+        &:hover {
+            background-color: $main-color;
+            color: $white;
+        }
+
+        &.active {
+            background-color: $main-color;
+            color: $white;
+
+            &::before {
+                display: block;
+            }
+        }
+
+        &::before {
+            display: none;
+
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+
+            content: "";
+            width: 10px;
+            height: 10px;
+            background-color: $main-color;
+            transition: opacity .2s ease;
+        }
+    }
+}

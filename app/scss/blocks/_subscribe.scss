@@ -1,0 +1,72 @@
+.subscribe {
+    padding: 80px 15px;
+    text-align: center;
+
+    &__title {
+        font-family: 'Playfair Display', serif;
+        font-size: 46px;
+        font-weight: 700;
+
+        margin-bottom: 13px;
+
+        @media(max-width: 415px) {
+            font-size: 30px;
+        }
+    }
+
+    &__desc {
+        margin-bottom: 50px;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+
+        @media(max-width: 650px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__email {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        color: #757575;
+
+        width: 416px;
+        background-color: $gray2;
+        border: 0;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+
+        outline: none;    
+        padding: 10px 20px;
+
+        @media(max-width: 650px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__btn {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        color: $white;
+        font-weight: 700;
+
+        width: 179px;
+        background-color: $main-color;
+        border: none;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+
+        outline: none;
+        padding: 10px 20px;
+        cursor: pointer;
+
+        @media(max-width: 650px) {
+            width: 100%;
+        }
+    }
+}

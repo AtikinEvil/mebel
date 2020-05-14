@@ -1,0 +1,48 @@
+@import 'libs';
+@import 'vars';
+@import 'container';
+@import 'btn';
+@import 'slider-arrow';
+
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: $main-color;
+    background-color: $white;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+@import 'blocks/nav';
+@import 'blocks/header';
+@import 'blocks/intro';
+@import 'blocks/miniature';
+@import 'blocks/index';
+@import 'blocks/clearence';
+@import 'blocks/product';
+@import 'blocks/filter';
+@import 'blocks/discount';
+@import 'blocks/discount-slider';
+@import 'blocks/showcase';
+@import 'blocks/card';
+@import 'blocks/subscribe';
+@import 'blocks/blog';
+@import 'blocks/article';
+@import 'blocks/partners';
+@import 'blocks/feature';
+@import 'blocks/footer';
+@import 'blocks/copyright';
+@import 'blocks/category';

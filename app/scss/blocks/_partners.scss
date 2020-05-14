@@ -1,0 +1,39 @@
+.partners {
+    padding: 100px 130px;
+    background-color: $gray3;
+
+    @media(max-width: 850px) {
+        padding: 60px 130px;
+    }
+
+    @media(max-width: 650px) {
+        padding: 60px 0;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        @media(max-width: 1150px) {
+            text-align: center;
+        }
+    }
+
+    &__item {
+        @media(max-width: 1150px) {
+            width: 50%;
+        }
+
+        @media(max-width: 850px) {
+            width: 100%;
+        }
+    }
+
+    &__img {
+        width: 150px;
+        height: 120px;
+        object-fit: contain;
+    }
+}

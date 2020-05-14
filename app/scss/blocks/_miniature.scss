@@ -1,0 +1,47 @@
+.miniature {
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+    
+    height: 146px;
+    width: 257px;
+
+    @media(max-width: 1190px) {
+        display: none;
+    }
+
+    &__inner {
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+
+        height: 146px;
+        width: 257px;
+    }
+
+    &__filter {
+        display: flex;
+        align-items: center;
+        
+        height: 100%;
+
+        background-color: rgba($main-color, .6);
+        color: #fff;
+    }
+    
+    &__content {
+        margin-left: 30px;
+    }
+    
+    &__subtitle {
+        font-size: 14px;
+        font-weight: 500;
+    
+        margin-bottom: 10px;
+    }
+    
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+}

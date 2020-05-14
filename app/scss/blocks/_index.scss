@@ -1,0 +1,55 @@
+.index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+    
+    width: 130px;
+    height: 92%;
+    background-color: $gray3;
+    animation: index 1.5s ease;
+
+    @keyframes index {
+        0% {
+            height: 0;
+        }
+
+        100% {
+            height: 92%;
+        }
+    }
+
+    @media(max-width: 875px) {
+        display: none;
+    }
+    
+    &__item {
+        margin-top: 50px;
+        height: 100px;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        transform: rotate(-90deg);
+    }
+    
+    &__number-active {
+        font-family: 'Playfair Display', serif;
+        font-size: 68px;
+        line-height: 1;
+    
+        margin-right: 12px;
+    }
+    
+    &__number-quantity {
+        color: $white;
+        padding: 4px 16px;
+        background-color: $secondary-color;
+    } 
+    
+}
+
